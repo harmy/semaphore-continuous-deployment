@@ -3,7 +3,7 @@
   connection: local
   gather_facts: False
   vars:
-    aws_region: eu-west-1
+    aws_region: us-east-1
     app_name: "semaphore-cd"
     prereq_stack_name: "{{ app_name }}-prereqs"
     app_stack_name: "{{ app_name }}-main"

@@ -36,6 +36,7 @@ test-ci: test-image test-cloudformation
 
 .PHONY: push
 push:
+	eval $(aws ecr get-login --region us-east-1)
 	docker tag $(IMAGE) $(UPSTREAM)
 	docker push $(UPSTREAM)
 
